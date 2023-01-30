@@ -1,0 +1,112 @@
+/* Element styling */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #005799;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+/* Common use classes */
+.clear {
+  clear: both;
+}
+.align-center {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.indent {
+  margin-left: 20px;
+}
+
+.button {
+  background-color: #0273fd;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #005799;
+}
+
+/* Remove markers from lists */
+ul.no-markers {
+  list-style-type: none;
+}
+
+/* Content styling */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  min-height: 50px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+}
+.container > p, .container > .question {
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+.container.align-center > p, .container.align-center > .question {
+  max-width: 70ch;
+}
+.container > img {
+  border: 10px solid #003d6b;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.header > div {
+  display: flex;
+  gap: 10px;
+}
+
+.subtitle {
+  font-size: 2.5em;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.question {
+  font-weight: 600;
+  font-size: 1.2em;
+  display: block;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .subtitle {
+    font-size: 2em;
+  }
+}

@@ -9,10 +9,6 @@ h1 {
   font-size: 2.3em;
 }
 
-p {
-  padding-bottom: 10px;
-}
-
 /* Common use classes */
 .clear {
   clear: both;
@@ -28,6 +24,9 @@ p {
 }
 .indent {
   margin-left: 20px;
+}
+.content {
+  padding-bottom: 10px;
 }
 
 .button {
@@ -64,11 +63,11 @@ ul.no-markers {
   margin-bottom: 40px;
   padding: 20px 40px;
 }
-.container > p, .container > .question {
+.container > .content, .container > .question {
   word-wrap: break-word;
   margin: 0 auto;
 }
-.container.align-center > p, .container.align-center > .question {
+.container.align-center > .content, .container.align-center > .question {
   max-width: 70ch;
 }
 .container > img {

@@ -46,6 +46,9 @@ h1 {
 .button:hover {
   background-color: #005799;
 }
+.button-link {
+  text-decoration: none;
+}
 
 /* Remove markers from lists */
 ul.no-markers {

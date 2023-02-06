@@ -64,6 +64,7 @@ h1 {
 /* Remove markers from lists */
 ul.no-markers {
   list-style-type: none;
+  padding: 0;
 }
 
 /* Content styling */

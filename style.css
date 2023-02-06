@@ -29,6 +29,9 @@ h1 {
   padding-bottom: 10px;
 }
 
+.button-link {
+  text-decoration: none;
+}
 .button {
   background-color: #0273fd;
   border: none;
@@ -46,8 +49,16 @@ h1 {
 .button:hover {
   background-color: #005799;
 }
-.button-link {
-  text-decoration: none;
+.button[disabled] {
+  background-color: #CCCCCC;
+  color: #888888
+}
+.button[disabled] img {
+  filter: grayscale(1);
+}
+.button img, .button span {
+  vertical-align: middle;
+  padding: 0px 5px;
 }
 
 /* Remove markers from lists */

@@ -1,6 +1,6 @@
 /* Element styling */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   background: #005799;
   margin-top: 20px;
 }
@@ -46,6 +46,9 @@ h1 {
 .button:hover {
   background-color: #005799;
 }
+.button-link {
+  text-decoration: none;
+}
 
 /* Remove markers from lists */
 ul.no-markers {
@@ -54,7 +57,6 @@ ul.no-markers {
 
 /* Content styling */
 .container {
-  width: 90%;
   max-width: 1000px;
   min-height: 50px;
   background-color: white;
@@ -73,6 +75,8 @@ ul.no-markers {
 .container > img {
   border: 10px solid #003d6b;
   border-radius: 20px;
+  max-width: 400px;
+  width: 90%;
 }
 
 .header {

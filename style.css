@@ -101,17 +101,6 @@ ul.no-markers {
 .header > div:last-child {
   text-align: right;
 }
-@media (max-width: 650px) {
-  .header {
-    flex-direction: column;
-  }
-  .header > div:first-child, .header > div:last-child {
-    text-align: center;
-  }
-  .container {
-    padding: 20px;
-  }
-}
 
 .subtitle {
   font-size: 2.5em;
@@ -131,8 +120,21 @@ ul.no-markers {
   padding-bottom: 15px;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 @media (max-width: 800px) {
   .subtitle {
     font-size: 2em;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header > div:first-child, .header > div:last-child {
+    text-align: center;
+  }
+  .container {
+    padding: 20px;
   }
 }

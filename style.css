@@ -16,12 +16,6 @@ h1 {
 .align-center {
   text-align: center;
 }
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
 .indent {
   margin-left: 20px;
 }
@@ -100,6 +94,23 @@ ul.no-markers {
 .header > div {
   display: flex;
   gap: 10px;
+}
+.header > div:first-child {
+  text-align: left;
+}
+.header > div:last-child {
+  text-align: right;
+}
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+  .header > div:first-child, .header > div:last-child {
+    text-align: center;
+  }
+  .container {
+    padding: 20px;
+  }
 }
 
 .subtitle {

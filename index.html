@@ -137,7 +137,7 @@
                         <img src="./img/check-on.png" width="25" alt="" /> The BreezeWiki option will render Fandom
                         wikis through <a href="https://breezewiki.com/" target="_blank">BreezeWiki</a>, an external
                         service that removes clutter, simplifies the page, and removes ads. When enabled, you will see a
-                        list of available BreezeWiki mirrors. Occaisionally, BreezeWiki or one of its mirrors may go
+                        list of available BreezeWiki mirrors. Occasionally, BreezeWiki or one of its mirrors may go
                         down; when this happens, you can simply switch to another working instance.
                     </li>
                 </ul>
@@ -175,16 +175,32 @@
                 Here are the criteria:
                 <ul>
                     <li>
-                        The destination wiki should be independent, meaning that decisioning and control of the wiki
+                        The destination wiki should be independent, meaning that decision-making and control of the wiki
                         largely rests with the wiki's staff and volunteer editing community.
-                    </li>
-                    <li class="indent">
-                        Factors include editorial independence, the editorbase's ability to request changes from their
-                        host, and any history of the host exerting decisions contrary to a wiki community's wishes.
-                    </li>
-                    <li class="indent">
-                        Miraheze wikis may be considered independent, due to Miraheze's openness, customizability, and
-                        ability for wikis to migrate off the platform.
+                        <ul>
+                            <li>
+                                Factors include editorial independence, the editorbase's ability to request changes from
+                                their host, and any history of the host exerting decisions contrary to a wiki
+                                community's wishes.
+                            </li>
+                            <li>
+                                Miraheze wikis may be considered independent, due to Miraheze's openness,
+                                customizability, and ability for wikis to migrate off the platform.
+                            </li>
+                            <li>
+                                wiki.gg wikis are not considered independent. There is a separate "Redirect to wiki.gg"
+                                extension available for
+                                <a
+                                    href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca"
+                                    >Chrome</a
+                                >
+                                and
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/"
+                                    >Firefox</a
+                                >
+                                that you can use alongside Indie Wiki Buddy.
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         The destination wiki should be of decent quality, ideally matching (or exceeding) the quality
@@ -233,7 +249,26 @@
                 missed by users who aren't aware of their existence. This extension aims to help wiki readers discover
                 and user quality, independent wikis.
             </div>
-            <br /><br />
+            <br />
+            <span class="question">Can Miraheze wikis be added to this extension?</span>
+            <div class="content">
+                Yes! For the purposes of this extension, Miraheze wikis are considered independent. Even though Miraheze
+                is a large wiki platform, it is a non-profit organization that allows for extensive control by wiki
+                staff, and provides for wikis to easily migrate off the platform.
+            </div>
+            <br />
+            <span class="question">Can wiki.gg wikis be added to this extension?</span>
+            <div class="content">
+                While wiki.gg is a great platform, for the purposes of this extension, wiki.gg wikis are currently not
+                considered independent and are out of this extension's scope. Fortunately, there is a "Redirect to
+                wiki.gg" extension available for
+                <a href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca"
+                    >Chrome</a
+                >
+                and <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/">Firefox</a> that you
+                can use alongside Indie Wiki Buddy.
+            </div>
+            <br />
             <span class="question"
                 >For independent wikis to be added to the extension, why do they need to be of equal quality and
                 coverage as its non-independent counterpart?</span
@@ -249,13 +284,11 @@
             </div>
             <div class="content">If you have any ideas for how this experience should look, please reach out!</div>
             <br />
-            <br />
             <span class="question">What happens when there are multiple independent wikis on the same topic?</span>
             <div class="content">
                 We will try to redirect to the most complete wiki, and will also consider factors such as what is most
                 popular in the wiki subject's community.
             </div>
-            <br />
             <br />
             <span class="question">Can I see or contribute to the code?</span>
             <div class="content">

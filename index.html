@@ -23,6 +23,9 @@
             content="Indie Wiki Buddy, a browser extension to help you find quality, independent wikis"
         />
         <meta property="og:image" content="https://getindie.wiki/img/indie-wiki-buddy-banner.png" />
+
+        <script src="assets/swiffy/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+        <link href="assets/swiffy/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous" />
     </head>
 
     <body>
@@ -109,11 +112,49 @@
                 independent wiki isn't available!
             </div>
             <br />
-            <img
-                src="./img/indie-wiki-buddy-screenshot.png"
-                width="400"
-                alt="A screenshot of the Indie Wiki Buddy settings screen"
-            />
+
+            <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-nav-dark slider-nav-autoplay" data-slider-nav-autoplay-interval="4000">
+                <ul class="slider-container">
+                    <li>
+                        <img
+                            src="img/banner-redirect.png"
+                            style="max-width: 100%; height: auto"
+                            alt="Be redirected from Fandom wikis to independent alternatives with quality coverage, less clutter, and fewer ads"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="img/banner-alerts.png"
+                            style="max-width: 100%; height: auto"
+                            alt="Receive an alert banner when the Fandom wiki you're viewing has an independent alternative"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="img/banner-filter-search.png"
+                            style="max-width: 100%; height: auto"
+                            alt="Filter Fandom results from search engines, so that you can more easily find quality, independent wikis"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="img/banner-breezewiki.png"
+                            style="max-width: 100%; height: auto"
+                            alt="View Fandom wikis through BreezeWiki, to remove clutter and ads"
+                        />
+                    </li>
+                </ul>
+
+                <button type="button" class="slider-nav"></button>
+                <button type="button" class="slider-nav slider-nav-next"></button>
+
+                <div class="slider-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
         </div>
         <div class="container content">
             <h2 class="subtitle">Guide</h2>
@@ -122,9 +163,22 @@
                 <img src="./img/logo.png" width="20" alt="icon of an arrow pointing to the right" />
                 in the top bar, at the top right.
                 <br />
-                If you don't see the icon, it may be in the extension dropdown, which is a jigsaw icon <img src="./img/jigsaw.png" width="20" alt=""> in both Firefox and Chrome.
-                <br /><br />
-                Once you've opened Indie Wiki Buddy, the language dropdown at the right lets you switch between wikis in different languages.
+                If you don't see the icon, it may be in the extension dropdown, which is a jigsaw icon
+                <img src="./img/jigsaw.png" width="20" alt="" /> in both Firefox and Chrome.
+            </div>
+            <br />
+            <div class="display">
+                <img
+                    src="./img/indie-wiki-buddy-screenshot.png"
+                    width="400"
+                    alt="A screenshot of the Indie Wiki Buddy settings screen"
+                    class="center"
+                />
+            </div>
+            <br />
+            <div class="content">
+                Once you've opened Indie Wiki Buddy, the language dropdown at the right lets you switch between wikis in
+                different languages.
                 <br />
                 There are several toggles available:
                 <ul class="no-markers">
@@ -258,8 +312,8 @@
                 Indie Wiki Buddy requests access to fandom.com, as well as BreezeWiki and its mirrors, in order to
                 display redirect banners.
                 <br /><br />
-            	Indie Wiki Buddy also requests access to Google (across all its languages), Bing, and DuckDuckGo
-                in order to be able to filter search results.
+                Indie Wiki Buddy also requests access to Google (across all its languages), Bing, and DuckDuckGo in
+                order to be able to filter search results.
                 <br /><br />
                 Indie Wiki Buddy never transmits or stores data from these sites. Access is only used in order to
                 display alert banners and filter search results.

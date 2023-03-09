@@ -24,7 +24,7 @@ h1 {
   text-decoration: none;
 }
 .button {
-  background-color: #0273fd;
+  background-color: #005799;
   border: none;
   border-radius: 15px;
   color: white;
@@ -38,7 +38,7 @@ h1 {
   cursor: pointer;
 }
 .button:hover {
-  background-color: #005799;
+  background-color: #00467a;
 }
 .button[disabled] {
   background-color: #CCCCCC;

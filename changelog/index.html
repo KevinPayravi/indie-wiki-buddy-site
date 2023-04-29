@@ -23,18 +23,27 @@
             <h2>2.0.0 (coming soon!)</h2>
             <span>April ?, 2023</span>
             <ul>
+                <li>Interface overhaul, with new color and theming throughout</li>
                 <li>Settings popup has been simplified to just display global settings, useful links, and a link to the full settings page</li>
                 <li>A new settings page has been created, which includes all individual wiki controls that have been moved from the popup</li>
                 <li>A new guide page has been created, to provide in-app instructions and help</li>
                 <li>Settings page will periodically display a request for Chrome/Firefox reviews; user can permanently disable by clicking a link</li>
                 <li>Added global toggle for search engine filtering</li>
-                <li>Added some color and theming to user interface</li>
                 <li>Added support for redirecting from Fextralife wikis</li>
-                <li>Fixed an issue where article title wasn't retained when redirecting to some MediaWiki wikis</li>
                 <li>Data schema now supports grouping, so multiple wikis on a topic can be listed and controlled as one item</li>
                 <li>Search engine filtering will no longer affect Google Images, as it was hiding potentially useful images from users</li>
+                <li>The user's power settings are now stored locally instead of synced between browsers</li>
                 <li>Removed unnecessary cloud storage calls when loading the extension's popup or settings page</li>
                 <li>"Submit a wiki" link now points to the Indie Wiki Buddy website instead of directly to the Google Form</li>
+                <li>
+                    In collaboration with BreezeWiki, Indie Wiki Buddy now appends a custom header to inform BreezeWiki that the user has the extension installed
+                    <ul>
+                        <li>BreezeWiki will know whether the extension is on and whether BreezeWiki is enabled</li>
+                        <li>This will allow BreezeWiki to customize the interface (e.g. hide extension promotion and redirect banners that are repetitive to Indie Wiki Buddy)</li>
+                    </ul>
+                </li>
+                <li>Added version checking when fetching BreezeWiki mirrors, to ensure the user can't select mirrors the extension doesn't have permissions for</li>
+                <li>Fixed an issue where article title wasn't retained when redirecting to some MediaWiki wikis</li>
                 <li>
                     Added 6 English wikis:
                     <ul>

@@ -78,10 +78,11 @@ ul.no-markers {
 
 .display {
   text-align: center;
+  margin: 1em 0;
 }
 .display > img {
   margin: 0 auto;
-  border: 10px solid #003d6b;
+  border: 10px solid #005699;
   border-radius: 20px;
   max-width: 400px;
   width: 90%;

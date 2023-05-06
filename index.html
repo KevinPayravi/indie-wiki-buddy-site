@@ -159,14 +159,66 @@
         <div class="container content">
             <h2 class="subtitle"><a id="guide">Guide</a></h2>
             <div class="content">
-                Once installed, you can access the extension settings via the
+                Once installed, you can access the extension's setting popup via the
                 <img src="./img/logo.png" width="20" alt="icon of an arrow pointing to the right" />
                 in the top bar, at the top right.
                 <br />
                 If you don't see the icon, it may be in the extension dropdown, which is a jigsaw icon
                 <img src="./img/jigsaw.png" width="20" alt="" /> in both Firefox and Chrome.
             </div>
-            <br />
+            <div class="display">
+                <img
+                    src="./img/indie-wiki-buddy-popup.png"
+                    width="400"
+                    alt="A screenshot of the Indie Wiki Buddy popup settings"
+                    class="center"
+                />
+            </div>
+            <div class="content">
+                Inside this popup, you can toggle the extension on and off via the power button at the top right.
+                You can also control three global options:
+                <ul>
+                    <li>
+                      <b>🔔 Desktop notifications when redirected to an indie wiki or BreezeWiki</b>
+                      <br />
+                      When this option is enabled, you will receive a desktop notification whenever you are
+                      automatically redirected to either an indie wiki or <a href="https://breezewiki.com/">BreezeWiki</a>.
+                      This is on by default.
+                      <br />
+                      <br />
+                      If you aren't getting notifications when this is enabled, check your operating system's notification
+                      settings to ensure that your browser is allowed to send notifications.
+                    </li>
+                    <br />
+                    <li>
+                      <b>🔎 Filter non-indie wikis in Google, Bing, DuckDuckGo, & Brave</b>
+                      <br />
+                      When this option is enabled, non-indie wikis will be filtered from search engine results
+                      when an independent wiki is available. This is to help prioritize independent wikis in your results.
+                      This is on by default.
+                      <br />
+                      <br />
+                      Currently, Google, Bing, DuckDuckGo, and Brave Search are supported.
+                      Note that image results are not filtered;
+                      we don't want users to miss out on images they might not find elsewhere!
+                      <br />
+                      <br />
+                      When a search result is filtered, it will be replaced with:
+                      <br />
+                      "<i>A search result from ABC Wiki has been removed by Indie Wiki Buddy. Look for results from XYZ instead!</i>"
+                    </li>
+                    <br />
+                    <li>
+                      <b>🌬️ Use BreezeWiki on Fandom</b>
+                      <br />
+                      This option will render Fandom wikis through <a href="https://breezewiki.com/">BreezeWiki</a>, an external service that removes clutter, simplifies the page, and removes ads.
+                      Occasionally, BreezeWiki or one of its mirrors may go down; when this happens, you can simply switch to another working instance. This is off by default.
+                    </li>
+                  </ul>
+            </div>
+            <div class="content">
+                You can click "View All Settings" to open a full settings page where you can configure your settings per-wiki.
+            </div>
             <div class="display">
                 <img
                     src="./img/indie-wiki-buddy-screenshot.png"
@@ -175,29 +227,7 @@
                     class="center"
                 />
             </div>
-            <br />
             <div class="content">
-                Once you've opened Indie Wiki Buddy, the language dropdown at the right lets you switch between wikis in
-                different languages.
-                <br />
-                There are several toggles available:
-                <ul class="no-markers">
-                    <li>
-                        <img src="./img/power-on.png" width="25" alt="" /> The power button turns the extension on and
-                        off.
-                    </li>
-                    <li>
-                        <img src="./img/bell-on.png" width="25" alt="" /> The notify-on-redirect option will send you a
-                        desktop notification when you have been redirected to an independent wiki.
-                    </li>
-                    <li>
-                        <img src="./img/check-on.png" width="25" alt="" /> The BreezeWiki option will render Fandom
-                        wikis through <a href="https://breezewiki.com/" target="_blank">BreezeWiki</a>, an external
-                        service that removes clutter, simplifies the page, and removes ads. When enabled, you will see a
-                        list of available BreezeWiki mirrors. Occasionally, BreezeWiki or one of its mirrors may go
-                        down; when this happens, you can simply switch to another working instance.
-                    </li>
-                </ul>
                 The list of all wikis allows you to configure what you want to happen when visiting the respective
                 non-independent wiki:
                 <ul class="no-markers">

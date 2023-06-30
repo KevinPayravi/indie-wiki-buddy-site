@@ -25,11 +25,19 @@
             <ul>
                 <li>For Chromium users, a note has been added to the popup and settings page regarding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1271154">bug 1271154</a>, which can cause the extension to stop working after an update</li>
                 <li>Independent wiki alert banner now has links to change settings for that wiki (either disabling the banner or enabling automatic redirection)</li>
+                <li>Alert banner now pushes a wiki's page content down so that it no longer cuts off any content</li>
                 <li>When Indie Wiki Buddy is off, extension's icon will persist being grayed out when browser is restarted or extension is reloaded</li>
                 <li>Added BreezeWiki redirect count to "Fun Stats" section on Settings page</li>
                 <li>Fixed issue where redirect and BreezeWiki stat counts were increasing multiple times per redirect</li>
-                <li>Added support for three more BreezeWiki mirrors (bw.hamstro.dev, nerd.whatever.social, and breeze.nohost.network)</li>
-                <li>Removed defunct BreezeWiki mirror (breeze.777.tf)</li>
+                <li>
+                    BreezeWiki updates:
+                    <ul>
+                        <li>Added support for three more BreezeWiki mirrors (bw.hamstro.dev, nerd.whatever.social, and breeze.nohost.network)</li>                
+                        <li>Removed defunct BreezeWiki mirror (breeze.777.tf)</li>
+                         <li>Remote fetching of BreezeWiki hosts now only happens when BreezeWiki is enabled</li>
+                        <li>If remote fetch of BreezeWiki hosts fails, it now defaults to breezewiki.com instead of breaking</li>
+                    </ul>
+                </li>
                 <li>
                     Added 19 English listings:
                     <ul>

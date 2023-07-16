@@ -9,6 +9,21 @@ h1 {
   font-size: 2.3em;
 }
 
+a {
+  text-decoration-style: dotted;
+}
+
+table {
+  border: 2px solid #eee;
+}
+th {
+  text-align: left;
+  background-color: #eee;
+}
+th, td {
+  padding: .2em .5em;
+}
+
 /* Common use classes */
 .clear {
   clear: both;
@@ -18,6 +33,9 @@ h1 {
 }
 .content {
   padding-bottom: 10px;
+}
+.text-decor-none {
+  text-decoration: none;
 }
 
 .button-link {

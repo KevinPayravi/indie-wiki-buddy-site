@@ -27,23 +27,23 @@
                 <li>Added search engine filtering for <a href="https://html.duckduckgo.com/html/">HTML version of DuckDuckGo</a></li>
                 <li>Added search engine filtering for <a href="https://www.ecosia.org/">Ecosia</a></li>
                 <li>Added search engine filtering for <a href="https://www.startpage.com/en/">Startpage</a></li>
-                <li>Search engine filtering now happens earlier in the page load (may be noticeable on slower connections)</li>
                 <li>
-                    Improved Google filtering reliability
+                    Additional search engine filtering improvements:
                     <ul>
-                        <li>Previously, Google Search filtering could fail, particularly on slower connections</li>
-                        <li>Fixed issue where some result sublinks would be missed</li>
+                        <li>Minor styling improvements for search engine filter text</li>
+                        <li>Search engine filtering now happens earlier in the page load (may be noticeable on slower connections)</li>
+                        <li>For Google Search filtering, fixed issue where filtering could fail, particularly on slower connections</li>
+                        <li>For Google Search filtering, fixed issue where some result sublinks would be missed</li>
                     </ul>
                 </li>
+                <li>Fixed an issue where the redirect banner would sometimes fail to load (script now waits for head element to load)</li>
+                <li>Fixed an issue where redirect banner text would be too small on some wikis</li>
                 <li>
                     Content script has been split into two (one for search engine filtering, another for displaying redirect banners)
                     <ul>
                         <li>Same user experience, this just marginally lowers filesize and complexity</li>
                     </ul>
                 </li>
-                <li>Fixed an issue where the redirect banner would sometimes fail to load (script now waits for head element to load)</li>
-                <li>Fixed an issue where redirect banner text would be too small on some wikis</li>
-                <li>Minor styling improvements for search engine filter text</li>
                 <li>
                     Added support for destination wiki content path prefixes
                     <ul>

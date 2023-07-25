@@ -28,15 +28,26 @@
                 <li>Added search engine filtering for <a href="https://www.ecosia.org/">Ecosia</a></li>
                 <li>Added search engine filtering for <a href="https://www.startpage.com/en/">Startpage</a></li>
                 <li>Improved Google search filtering to more reliably catch result sublinks</li>
+                <li>
+                    Content script has been split into two (one for search engine filtering, another for displaying redirect banners)
+                    <ul>
+                        <li>Same user experience, this just marginally lowers filesize and complexity</li>
+                    </ul>
+                <li>
                 <li>Fixed an issue where the redirect banner would sometimes fail to load (script now waits for head element to load)</li>
                 <li>Fixed an issue where redirect banner text would be too small on some wikis</li>
                 <li>Minor styling improvements for search engine filter text</li>
-                <li>Added support for defining content path prefixes. This enables support for Yume Wiki, which separates its articles by game.</li>
+                <li>
+                    Added support for destination wiki content path prefixes
+                    <ul>
+                        <li>This enables support for Yume Wiki, which separates its articles into separate namespaces by game</li>
+                    </ul>
+                </li>
                 <li>Corrected Pikipedia favicon</li>
                 <li>
                     Added 9 English listings:
                     <ul>
-                        <li>Azur Lane Fandom Wiki to Azur Lane Wiki</li>
+                        <li>Azur Lane Fandom Wikis to Azur Lane Wiki</li>
                         <li>Dreamlight Valley Fandom Wiki to Dreamlight Valley Wiki</li>
                         <li>Famicom Fandom Wiki to FamiWiki</li>
                         <li>Genfanad Fandom Wiki to Genfanad Wiki</li>
@@ -48,6 +59,7 @@
                     </ul>
                 </li>
                 <li>Added 1 Spanish listing: amiibopedia Fandom Wiki to amiibopedia</li>
+                <li>Added 2 additional English Animal Crossing Fandom wikis to redirect to Nookipedia</li>
             </ul>
             <h2>2.2.0</h2>
             <span>July 1, 2023</span>

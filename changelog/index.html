@@ -27,7 +27,8 @@
                 <li>Added search engine filtering for <a href="https://html.duckduckgo.com/html/">HTML version of DuckDuckGo</a></li>
                 <li>Added search engine filtering for <a href="https://www.ecosia.org/">Ecosia</a></li>
                 <li>Added search engine filtering for <a href="https://www.startpage.com/en/">Startpage</a></li>
-                <li>Improved Google search filtering to more reliably catch result sublinks</li>
+                <li>Search engine filtering now happens earlier in the page load (may be noticeable on slower connections)</li>
+                <li>Improved Google search filtering reliability (could previously fail to load or catch result sublinks)</li>
                 <li>
                     Content script has been split into two (one for search engine filtering, another for displaying redirect banners)
                     <ul>

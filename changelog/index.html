@@ -10,6 +10,11 @@
         <link rel="icon" href="../img/favicon-64.png" sizes="64x64" />
         <link rel="icon" href="../img/favicon-128.png" sizes="128x128" />
         <link rel="stylesheet" href="../style.css" />
+        <script>
+            if (new URLSearchParams(window.location.search).get('updated')) {
+                document.getElementById('updatedNote').style.display = 'initial';
+            }
+        </script>
         <meta
             name="description"
             content="The changelog for Indie Wiki Buddy, a browser extension to help you find quality, independent wikis"
@@ -20,6 +25,10 @@
         <div class="container content">
             <h1 class="subtitle">Indie Wiki Buddy Changelog</h1>
             <p><a href="..">⇦ Back to home</a></p>
+            <br />
+            <div id="updatedNote" class="align-center" style="display: none;">
+                Indie Wiki Buddy has been updated in your browser! Please review the latest list of changes below to see what is new.
+            </div>
             <br />
             <h2>2.5.2</h2>
             <span>September 25, 2023</span>

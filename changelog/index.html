@@ -13,7 +13,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
                 if (new URLSearchParams(window.location.search).get('updated')) {
-                    document.getElementById('updatedNote').style.display = 'initial';
+                    document.getElementById('updatedNote').style.display = 'block';
                 }
             });
         </script>
@@ -27,11 +27,9 @@
         <div class="container content">
             <h1 class="subtitle">Indie Wiki Buddy Changelog</h1>
             <p><a href="..">⇦ Back to home</a></p>
-            <br />
             <div id="updatedNote" class="align-center" style="display: none;">
                 Indie Wiki Buddy has been updated in your browser! Please review the latest list of changes below to see what is new.
             </div>
-            <br />
             <h2>2.5.2</h2>
             <span>September 25, 2023</span>
             <ul>

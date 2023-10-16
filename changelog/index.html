@@ -11,9 +11,11 @@
         <link rel="icon" href="../img/favicon-128.png" sizes="128x128" />
         <link rel="stylesheet" href="../style.css" />
         <script>
-            if (new URLSearchParams(window.location.search).get('updated')) {
-                document.getElementById('updatedNote').style.display = 'initial';
-            }
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                if (new URLSearchParams(window.location.search).get('updated')) {
+                    document.getElementById('updatedNote').style.display = 'initial';
+                }
+            });
         </script>
         <meta
             name="description"

@@ -35,6 +35,9 @@ th, td {
 .content {
   padding-bottom: 10px;
 }
+.content img {
+  max-width: 100%;
+}
 .text-decor-none {
   text-decoration: none;
 }

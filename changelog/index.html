@@ -47,6 +47,10 @@
                     </div>
                 </li>
                 <li>
+                    New opt-in feature to redirect non-English Fandom/Fextralife wikis to English wikis when no independent same-language wiki exists.
+                    This can be helpful for multilingual speakers that want to use the many independent English wikis that are available.
+                </li>
+                <li>
                     On the settings page:
                     <ul>
                         <li>The settings UI has been reworked to be more clear and accessible.</li>
@@ -57,12 +61,22 @@
                         <li>New "All languages" filter is available, to view all available wikis across all languages at once.</li>
                     </ul>
                 </li>
+                 <li>
+                    In the popup settings:
+                    <ul>
+                        <li>The popup UI settings have been reworked to be more clear and accessible.</li>
+                        <li>Users can now change settings for all wikis via the popup, instead of having to go into the settings page.</li>
+                    </ul>
+                </li>
                 <li>Opera users now receive a notice regarding granting IWB permission to run on search engines.</li>
                 <li>
-                    Chromium bug banner has been updated.
-                    If a user faces issues with IWB runnning after an update,
-                    they now just need to go to their browser settings and tooggle the extension off and on again,
-                    instead of re-installing the extension entirely.
+                    The Chromium bug banner has been updated.
+                    Chromium <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1271154">bug 1271154</a>
+                    has been resolved, but there is a new
+                    <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1271154">bug 1271154</a>
+                    that can also cause the extension to stop working after an update.
+                    If a user faces issues this issue, they now just need to go to their browser settings
+                    and tooggle the extension off and on again, instead of re-installing the extension entirely.
                 </li>
                 <li>
                     The Opera and Chromium notices are now dismissible by the user.
@@ -73,6 +87,11 @@
                         <li>MCC Island Fandom Wiki to MCC Island Wiki</li>
                         <li>Megami Tensei Fandom Wiki to Megami Tensei Wiki</li>
                     </ul>
+                </li>
+                <li>
+                    The way Indie Wiki Buddy structures its data storage has been updated.
+                    A v3 data migration automatically occurs in the background on-update,
+                    or whenever the user opens the extension's settings.
                 </li>
             </ul>
             <h2>2.5.2</h2>

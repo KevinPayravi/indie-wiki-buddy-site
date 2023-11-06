@@ -17,11 +17,14 @@ a {
 table {
   border: 2px solid #eee;
 }
+
 th {
   text-align: left;
   background-color: #eee;
 }
-th, td {
+
+th,
+td {
   padding: .2em .5em;
 }
 
@@ -29,15 +32,25 @@ th, td {
 .clear {
   clear: both;
 }
+
 .align-center {
   text-align: center;
 }
+
 .content {
   padding-bottom: 10px;
 }
+
 .content img {
   max-width: 100%;
 }
+
+.changelog img {
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+  margin: 1em;
+  border: 1px solid #d8d8d8;
+}
+
 .text-decor-none {
   text-decoration: none;
 }
@@ -45,6 +58,7 @@ th, td {
 .button-link {
   text-decoration: none;
 }
+
 .button {
   background-color: #005799;
   border: none;
@@ -59,17 +73,22 @@ th, td {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
 .button:hover {
   background-color: #00467a;
 }
+
 .button[disabled] {
   background-color: #CCCCCC;
   color: #888888
 }
+
 .button[disabled] img {
   filter: grayscale(1);
 }
-.button img, .button span {
+
+.button img,
+.button span {
   vertical-align: middle;
   padding: 0px 5px;
 }
@@ -90,11 +109,15 @@ ul.no-markers {
   margin-bottom: 40px;
   padding: 20px 40px;
 }
-.container > .content, .container > .question {
+
+.container>.content,
+.container>.question {
   word-wrap: break-word;
   margin: 0 auto;
 }
-.container.align-center > .content, .container.align-center > .question {
+
+.container.align-center>.content,
+.container.align-center>.question {
   max-width: 70ch;
 }
 
@@ -102,7 +125,8 @@ ul.no-markers {
   text-align: center;
   margin: 1em 0;
 }
-.display > img {
+
+.display>img {
   margin: 0 auto;
   border: 10px solid #005699;
   border-radius: 20px;
@@ -116,14 +140,17 @@ ul.no-markers {
   justify-content: space-between;
   font-weight: 600;
 }
-.header > div {
+
+.header>div {
   display: flex;
   gap: 10px;
 }
-.header > div:first-child {
+
+.header>div:first-child {
   text-align: left;
 }
-.header > div:last-child {
+
+.header>div:last-child {
   text-align: right;
 }
 
@@ -138,6 +165,7 @@ ul.no-markers {
   margin-left: 0;
   margin-right: 0;
 }
+
 .question {
   font-weight: 600;
   font-size: 1.2em;
@@ -153,12 +181,16 @@ ul.no-markers {
   .subtitle {
     font-size: 2em;
   }
+
   .header {
     flex-direction: column;
   }
-  .header > div:first-child, .header > div:last-child {
+
+  .header>div:first-child,
+  .header>div:last-child {
     text-align: center;
   }
+
   .container {
     padding: 20px;
   }

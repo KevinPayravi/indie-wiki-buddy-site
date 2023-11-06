@@ -93,10 +93,13 @@ td {
   padding: 0px 5px;
 }
 
-/* Remove markers from lists */
+/* List modifiers */
 ul.no-markers {
   list-style-type: none;
   padding: 0;
+}
+ul.padded {
+  padding-left: .8em;
 }
 
 /* Content styling */

@@ -1,458 +1,428 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Indie Wiki Buddy</title>
-        <link rel="icon" href="img/favicon-16.png" sizes="16x16" />
-        <link rel="icon" href="img/favicon-32.png" sizes="32x32" />
-        <link rel="icon" href="img/favicon-48.png" sizes="48x48" />
-        <link rel="icon" href="img/favicon-64.png" sizes="64x64" />
-        <link rel="icon" href="img/favicon-128.png" sizes="128x128" />
-        <link rel="stylesheet" href="style.css" />
-        <meta
-            name="description"
-            content="Indie Wiki Buddy, a browser extension to help you find quality, independent wikis"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Indie Wiki Buddy" />
-        <meta property="og:site_name" content="Indie Wiki Buddy" />
-        <meta property="og:url" content="https://getindie.wiki" />
-        <meta
-            property="og:description"
-            content="Indie Wiki Buddy, a browser extension to help you find quality, independent wikis"
-        />
-        <meta property="og:image" content="https://getindie.wiki/img/indie-wiki-buddy-banner.png" />
 
-        <script src="assets/swiffy/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-        <link href="assets/swiffy/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indie Wiki Buddy</title>
+    <link rel="icon" href="img/favicon-16.png" sizes="16x16" />
+    <link rel="icon" href="img/favicon-32.png" sizes="32x32" />
+    <link rel="icon" href="img/favicon-48.png" sizes="48x48" />
+    <link rel="icon" href="img/favicon-64.png" sizes="64x64" />
+    <link rel="icon" href="img/favicon-128.png" sizes="128x128" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description"
+        content="Indie Wiki Buddy, a browser extension to help you find quality, independent wikis" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Indie Wiki Buddy" />
+    <meta property="og:site_name" content="Indie Wiki Buddy" />
+    <meta property="og:url" content="https://getindie.wiki" />
+    <meta property="og:description"
+        content="Indie Wiki Buddy, a browser extension to help you find quality, independent wikis" />
+    <meta property="og:image" content="https://getindie.wiki/img/indie-wiki-buddy-banner.png" />
 
-    <body>
-        <div class="container header">
-            <div class="header-left">
-                <h1>Indie Wiki Buddy</h1>
-            </div>
-            <div class="header-right" style="line-height: 2em">
-                <a
-                    class="button-link"
-                    href="https://chrome.google.com/webstore/detail/indie-wiki-buddy/fkagelmloambgokoeokbpihmgpkbgbfm"
-                    target="_blank"
-                >
-                    <img src="img/browser-chrome.png" alt="Install on Chrome" title="Install on Chrome" width="35" />
-                </a>
-                <a
-                    class="button-link"
-                    href="https://addons.mozilla.org/en-US/firefox/addon/indie-wiki-buddy/"
-                    target="_blank"
-                >
-                    <img src="img/browser-firefox.png" alt="Install on Firefox" title="Install on Firefox" width="35" />
-                </a>
-                <a class="button-link" href="https://ko-fi.com/V7V61Z26Z" target="_blank">
-                    <img
-                        height="36"
-                        style="border: 0px; height: 36px"
-                        src="https://storage.ko-fi.com/cdn/kofi2.png?v=3"
-                        alt="Buy Me a Coffee at ko-fi.com"
-                    />
-                </a>
-            </div>
+    <script src="assets/swiffy/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="assets/swiffy/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container header">
+        <div class="header-left">
+            <h1>Indie Wiki Buddy</h1>
         </div>
-        <div class="container content align-center">
-            <span class="subtitle">
-                Discover independent wikis <br />
-                on your favorite topics
-            </span>
-            <div class="clear"></div>
-            <a
-                class="button-link"
+        <div class="header-right" style="line-height: 2em">
+            <a class="button-link"
                 href="https://chrome.google.com/webstore/detail/indie-wiki-buddy/fkagelmloambgokoeokbpihmgpkbgbfm"
-                target="_blank"
-            >
-                <button class="button">
-                    <img src="img/browser-chrome.png" alt="" width="25" />
-                    <span>Install on Chrome</span>
-                </button>
+                target="_blank">
+                <img src="img/browser-chrome.png" alt="Install on Chrome" title="Install on Chrome" width="35" />
             </a>
+            <a class="button-link" href="https://addons.mozilla.org/en-US/firefox/addon/indie-wiki-buddy/"
+                target="_blank">
+                <img src="img/browser-firefox.png" alt="Install on Firefox" title="Install on Firefox" width="35" />
+            </a>
+            <a class="button-link" href="https://ko-fi.com/V7V61Z26Z" target="_blank">
+                <img height="36" style="border: 0px; height: 36px" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3"
+                    alt="Buy Me a Coffee at ko-fi.com" />
+            </a>
+        </div>
+    </div>
+    <div class="container content align-center">
+        <span class="subtitle">
+            Discover independent wikis <br />
+            on your favorite topics
+        </span>
+        <div class="clear"></div>
+        <a class="button-link"
+            href="https://chrome.google.com/webstore/detail/indie-wiki-buddy/fkagelmloambgokoeokbpihmgpkbgbfm"
+            target="_blank">
+            <button class="button">
+                <img src="img/browser-chrome.png" alt="" width="25" />
+                <span>Install on Chrome</span>
+            </button>
+        </a>
+        <br />
+        <a class="button-link" href="https://addons.mozilla.org/en-US/firefox/addon/indie-wiki-buddy/" target="_blank">
+            <button class="button">
+                <img src="img/browser-firefox.png" alt="" width="25" />
+                <span>Install on Firefox</span>
+            </button>
+        </a>
+        <br />
+        <a class="button-link" href="firefox-mobile" target="_blank">
+            <button class="button">
+                <img src="img/browser-firefox-android-beta.png" alt="" width="25" />
+                <span>Install on Firefox Beta on Android</span>
+            </button>
+        </a>
+        <br /><br />
+        <div class="content">
+            On an internet dominated by ads and corporate-run websites,
+            Indie Wiki Buddy is a browser extension that helps you easily find and support independent wikis.
             <br />
-            <a
-                class="button-link"
-                href="https://addons.mozilla.org/en-US/firefox/addon/indie-wiki-buddy/"
-                target="_blank"
-            >
-                <button class="button">
-                    <img src="img/browser-firefox.png" alt="" width="25" />
-                    <span>Install on Firefox</span>
-                </button>
-            </a>
             <br />
-            <a class="button-link" href="firefox-mobile" target="_blank">
-                <button class="button">
-                    <img src="img/browser-firefox-android-beta.png" alt="" width="25" />
-                    <span>Install on Firefox Beta on Android</span>
-                </button>
+            When you visit a wiki on Fandom or Fextralife, this extension will notify or automatically
+            redirect you to quality independent wikis when they're available.
+            Search results in Google, Bing, DuckDuckGo, Yahoo, Brave, Ecosia, and Startpage
+            can also be filtered, guiding you to visit an independent counterpart instead.
+            <br />
+            <br />
+            Indie Wiki Buddy supports <a href="listings">over 100 independent wikis</a> across 7 languages.
+            And you're in full control -- you can choose your experience wiki-by-wiki!
+            <br />
+            <br />
+            Indie Wiki Buddy also supports <a href="https://breezewiki.com/">BreezeWiki</a>, a service that renders
+            Fandom wikis without ads or bloat.
+            Once enabled, BreezeWiki provides a more enjoyable reading experience when an
+            independent wiki isn't available!
+        </div>
+        <br />
+
+        <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-nav-dark slider-nav-autoplay"
+            data-slider-nav-autoplay-interval="4000">
+            <ul class="slider-container">
+                <li>
+                    <img src="img/banner-redirect.png" style="max-width: 100%; height: auto"
+                        alt="Redirect from Fandom + Fextralife wikis to independent alternatives with quality coverage, less clutter, and fewer ads" />
+                </li>
+                <li>
+                    <img src="img/banner-alerts.png" style="max-width: 100%; height: auto"
+                        alt="Be alerted when the Fandom or Fextralife wiki you're viewing has an independent alternative" />
+                </li>
+                <li>
+                    <img src="img/banner-filter-search.png" style="max-width: 100%; height: auto"
+                        alt="Filter Fandom and Fextralife results from search engines, so that you can more easily find quality, independent wikis" />
+                </li>
+                <li>
+                    <img src="img/banner-breezewiki.png" style="max-width: 100%; height: auto"
+                        alt="View Fandom wikis through BreezeWiki, to remove clutter and ads" />
+                </li>
+            </ul>
+
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+    </div>
+    <div class="container content">
+        <h2 class="subtitle"><a id="guide">Guide</a></h2>
+        <div class="content">
+            Once installed, you can access the extension's settings popup via the
+            <img src="./img/logo.png" width="20" alt="icon of an arrow pointing to the right" />
+            in the top bar, at the top right.
+            <br />
+            If you don't see the icon, it may be in the extension dropdown, which is a jigsaw icon
+            <img src="./img/jigsaw.png" width="20" alt="" /> in both Firefox and Chrome.
+        </div>
+        <div class="display">
+            <img src="./img/indie-wiki-buddy-popup.png" width="400"
+                alt="A screenshot of the Indie Wiki Buddy popup settings" class="center" />
+        </div>
+        <div class="content">
+            Inside this popup, you can toggle the extension on and off via the
+            <img src="./img/power-on.png" alt="" width="15"> power button at the top right.
+            <br />
+            <br />
+            The first set of options let you quickly set the default behavior for all wikis.
+            First, you can select happens when you visit Fandom and Fextralife wikis
+            in which an independent wiki is available.
+            <ul class="no-markers padded">
+                <li>
+                    <img src="./img/toggle-disabled.png" alt="" width="15">
+                    <b>Disable</b>: You will be neither notified of nor redirected to the independent counterpart.
+                    You will still be directed to BreezeWiki if it is turned on.
+                </li>
+                <li>
+                    <img src="./img/toggle-alert.png" alt="" width="15">
+                    <b>Alert</b> (default): Have a display banner at the top notifying you that an independent wiki is available.
+                    This will appear on both Fandom and BreezeWiki pages.
+                </li>
+                <li>
+                    <img src="./img/toggle-redirect.png" alt="" width="15">
+                    <b>Redirect</b>: Be automatically redirected to the independent counterpart.
+                </li>
+            </ul>
+            The second option is for what happens in search engines when you get results for
+            Fandom and Fextralife wikis that have independent counterparts.
+            <ul class="no-markers padded">
+                <li>
+                    <img src="./img/toggle-disabled.png" alt="" width="15">
+                    <b>Disable</b>: Search engine results are not affected.
+                </li>
+                <li>
+                    <img src="./img/toggle-replace.png" alt="" width="15">
+                    <b>Replace</b> (default): The original non-indie result is disabled, and a button is injected above to take
+                    you to the indepedent wiki.
+                </li>
+                <li>
+                    <img src="./img/toggle-hide.png" alt="" width="15">
+                    <b>Hide</b>: Results are hidden in search engines.
+                    A banner will be shown near the top of the page to inform you, and allow you to re-reveal the hidden
+                    results.
+                </li>
+            </ul>
+            Below that are several global options:
+            <ul class="no-markers padded">
+                <li>
+                    <b><span aria-hidden="true">🔔</span> Desktop notifications when redirected to an indie wiki or
+                        BreezeWiki</b>
+                    <br />
+                    When this option is enabled, you will receive a desktop notification whenever you are
+                    automatically redirected to either an indie wiki or <a
+                        href="https://breezewiki.com/">BreezeWiki</a>.
+                    This is on by default.
+                    <br />
+                    <br />
+                    If you aren't getting notifications when this is enabled, check your operating system's notification
+                    settings to ensure that your browser is allowed to send notifications.
+                </li>
+                <br />
+                <li>
+                    <b><span aria-hidden="true">🌐</span> Redirect non-English Fandom/Fextralife wikis to independent
+                        English
+                        wikis when no same-language wiki exists</b>
+                    <br />
+                    By default, Indie Wiki Buddy will keep users within the same language
+                    (e.g. only redirecting Spanish Fandom wikis to Spanish indie wikis).
+                    However, multilingual speakers may want to also use the many independent English wikis that are
+                    available.
+                    Enabling this option will redirect from non-English Fandom/Fextralife wikis
+                    to independent English wikis when one isn't available in the same language.
+                </li>
+                <br />
+                <li>
+                    <b><span aria-hidden="true">🌬️</span> Use BreezeWiki alternative frontend on Fandom</b>
+                    <br />
+                    This option will render Fandom wikis through <a href="https://breezewiki.com/">BreezeWiki</a>, an
+                    external
+                    service that removes clutter, simplifies the page, and removes ads.
+                    Occasionally, BreezeWiki or one of its mirrors may go down; when this happens, you can simply switch
+                    to
+                    another working instance. This is off by default.
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            At the bottom of the settings popup, you can click "View All Settings" to open a full settings page where
+            you can configure your settings per-wiki.
+        </div>
+        <div class="display">
+            <img src="./img/indie-wiki-buddy-screenshot.png" width="400"
+                alt="A screenshot of the Indie Wiki Buddy settings screen" class="center" />
+        </div>
+    </div>
+    <div class="container content">
+        <h2 class="subtitle"><a id="submit">Submit a Wiki</a></h2>
+        <div class="content">
+            We're always looking for more wikis to add to the extension! <br />
+            <br />
+            Here are the criteria:
+            <ul>
+                <li>
+                    The destination wiki should be independent, meaning that decision-making and control of the wiki
+                    largely rests with the wiki's staff and volunteer editing community.
+                    <ul>
+                        <li>
+                            Factors include editorial independence, the editorbase's ability to request changes from
+                            their host, and any history of the host exerting decisions contrary to a wiki
+                            community's wishes.
+                        </li>
+                        <li>
+                            Miraheze wikis may be considered independent, due to Miraheze's openness,
+                            customizability, and ability for wikis to migrate off the platform.
+                        </li>
+                        <li>
+                            wiki.gg wikis are not considered independent. There is a separate "Redirect to wiki.gg"
+                            extension available for
+                            <a
+                                href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca">Chrome</a>
+                            and
+                            <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/">Firefox</a>
+                            that you can use alongside Indie Wiki Buddy.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    The destination wiki should be of decent quality, ideally matching (or exceeding) the quality
+                    and size of the origin wiki. While we want to support all independent wikis, we also want
+                    extension users to be directed to wikis where they can find what they are looking for.
+                </li>
+                <li>Should be of general interest. Wikis about particularly niche subjects may be discluded.</li>
+                <li>
+                    When there are multiple independent wikis on the same subject, we will usually point to the wiki
+                    that is most complete and prominent in the community.
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            If the independent wiki meets the criteria, you can submit it to be included in one of the following
+            ways:
+        </div>
+        <br />
+        <div class="align-center">
+            <a class="button-link" href="https://form.getindie.wiki" target="_blank">
+                <button class="button">Submit via Google Form</button>
             </a>
+            <a class="button-link"
+                href="https://github.com/KevinPayravi/indie-wiki-buddy/issues/new?assignees=KevinPayravi&labels=add+wiki&template=request-a-wiki-be-added.md&title=Add+a+wiki%3A+WIKI+NAME"
+                target="_blank">
+                <button class="button">Open issue on GitHub</button>
+            </a>
+            <a class="button-link"
+                href="https://github.com/KevinPayravi/indie-wiki-buddy/blob/main/README.md#adding-wikis"
+                target="_blank">
+                <button class="button">Contribute to codebase</button>
+            </a>
+        </div>
+    </div>
+    <div class="container content">
+        <h2 class="subtitle"><a id="faq">Frequently asked questions</a></h2>
+        <span class="question">Why does this exist?</span>
+        <div class="content">
+            Large, corporate-run wiki farms have enabled hundreds of great wikis and communities. Unfortunately,
+            these wiki farms can easily overshadow quality independent wikis, especially in search engine results.
+            Independent wikis often have the benefit of greater self-determination and fewer ads, but are easily
+            missed by users who aren't aware of their existence. This extension aims to help wiki readers discover
+            and user quality, independent wikis.
+        </div>
+        <br />
+        <span class="question">Why does this extension need access to so many sites?</span>
+        <div class="content">
+            Indie Wiki Buddy requests access to fandom.com, fextralife.com, and BreezeWiki and its mirrors,
+            in order to display redirect banners.
             <br /><br />
-            <div class="content">
-                On an internet dominated by ads and corporate-run websites,
-                Indie Wiki Buddy is a browser extension that helps you easily find and support independent wikis.
-                <br />
-                <br />
-                When you visit a wiki on Fandom or Fextralife, this extension will notify or automatically
-                redirect you to quality independent wikis when they're available.
-                Search results in Google, Bing, DuckDuckGo, Yahoo, Brave, Ecosia, and Startpage
-                can also be filtered, guiding you to visit an independent counterpart instead.
-                <br />
-                <br />
-                Indie Wiki Buddy supports <a href="listings">over 100 independent wikis</a> across 7 languages.
-                And you're in full control -- you can choose your experience wiki-by-wiki!
-                <br />
-                <br />
-                Indie Wiki Buddy also supports <a href="https://breezewiki.com/">BreezeWiki</a>, a service that renders
-                Fandom wikis without ads or bloat.
-                Once enabled, BreezeWiki provides a more enjoyable reading experience when an
-                independent wiki isn't available!
-            </div>
+            Indie Wiki Buddy also requests access to Google (across all its country domains),
+            Bing, DuckDuckGo, Yahoo, Brave, Startpage, and Ecosia in order to filter search results on those sites.
+            There are almost 200 different domains for Google Search by country
+            (e.g. google.co.uk, google.ca, google.es, etc.), which take up most of the site accesses you see.
+            <br /><br />
+            The full list of sites Indie Wiki Buddy requests access to is available
+            <a href="https://github.com/KevinPayravi/indie-wiki-buddy/blob/main/manifest3.json#L40">here</a>.
+            <br /><br />
+            Indie Wiki Buddy never transmits or stores data from these sites. Access is only used in order to
+            display alert banners and filter search results.
+        </div>
+        <br />
+        <span class="question">Can Miraheze wikis be added to this extension?</span>
+        <div class="content">
+            Yes! For the purposes of this extension, Miraheze wikis are considered independent. Even though Miraheze
+            is a large wiki platform, it is a non-profit organization that allows for extensive control by wiki
+            staff, and provides for wikis to easily migrate off the platform.
+        </div>
+        <br />
+        <span class="question">Can wiki.gg wikis be added to this extension?</span>
+        <div class="content">
+            While wiki.gg is a great platform, for the purposes of this extension, wiki.gg wikis are currently not
+            considered independent and are out of this extension's scope. Fortunately, there is a "Redirect to
+            wiki.gg" extension available for
+            <a
+                href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca">Chrome</a>
+            and <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/">Firefox</a> that you
+            can use alongside Indie Wiki Buddy.
+        </div>
+        <br />
+        <span class="question">
+            For independent wikis to be added to the extension, why do they need to be of equal quality and
+            coverage as its non-independent counterpart?
+        </span>
+        <div class="content">
+            The extension is geared towards readers looking for information, and pointing them towards wikis that
+            might not have the information they're seeking isn't an ideal experience.
+        </div>
+        <div class="content">
+            That being said, I do want to support all independent wikis and know the importance for developing wikis
+            to get new readers and editors. In the future, the extension may allow for less-complete wikis to be
+            added, though likely with some sort of control to allow users to easily filter/toggle these wikis.
+        </div>
+        <div class="content">If you have any ideas for how this experience should look, please reach out!</div>
+        <br />
+        <span class="question">What happens when there are multiple independent wikis on the same topic?</span>
+        <div class="content">
+            We will try to redirect to the most complete wiki, and will also consider factors such as what is most
+            popular in the wiki subject's community.
+        </div>
+        <br />
+        <span class="question">Can I see or contribute to the code?</span>
+        <div class="content">
+            Yes! Indie Wiki Buddy is open source and available
+            <a href="https://github.com/KevinPayravi/indie-wiki-buddy">on GitHub</a>.
+        </div>
+    </div>
+    <div class="container content align-center">
+        <h2 class="subtitle"><a id="contact">Contact</a></h2>
+        <div class="content">Feel free to get in touch with questions, comments, or ideas!</div>
+        <div class="content">
+            <ul class="no-markers">
+                <li>
+                    Email:
+                    <script type="text/javascript">
+                        name = "kevinpayravi";
+                        domain = "@gmail.com";
+                        mailto = "mailto:";
+                        document.write(
+                            ' <a href = "' +
+                            mailto +
+                            name +
+                            domain +
+                            '"class = "fill-div" > ' +
+                            name +
+                            domain +
+                            " </a>"
+                        );
+                    </script>
+                </li>
+                <li>Discord: Kayvan#0001</li>
+                <li>
+                    Twitter:
+                    <a href="https://twitter.com/KevinPayravi">@KevinPayravi</a>
+                </li>
+                <li>
+                    Mastodon:
+                    <a href="https://payravi.xyz/@kevin">@kevin@payravi.xyz </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container content align-center">
+        <div class="content">
+            A <a href="https://hamstro.dev/">Hamstro</a> project by
+            <a href="https://kevinpayravi.com">Kevin Payravi</a>
             <br />
+            <br />
+            <a href="https://github.com/KevinPayravi/indie-wiki-buddy">Source</a> | <a href="changelog">Changelog</a> |
+            <a href="listings">List of wikis</a> | <a href="privacy">Privacy policy</a>
+            <br />
+            <br />
+            Fandom is a trademark of <span class="no-wrap">Fandom, Inc.</span>
+            Fextralife is a trademark of <span class="no-wrap">Kinbundo Limited</span>.
+            <span class="no-wrap">Indie Wiki Buddy</span> is not affiliated with either site.
+        </div>
+    </div>
+</body>
 
-            <div class="swiffy-slider slider-nav-outside slider-nav-visible slider-nav-dark slider-nav-autoplay" data-slider-nav-autoplay-interval="4000">
-                <ul class="slider-container">
-                    <li>
-                        <img
-                            src="img/banner-redirect.png"
-                            style="max-width: 100%; height: auto"
-                            alt="Redirect from Fandom + Fextralife wikis to independent alternatives with quality coverage, less clutter, and fewer ads"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="img/banner-alerts.png"
-                            style="max-width: 100%; height: auto"
-                            alt="Be alerted when the Fandom or Fextralife wiki you're viewing has an independent alternative"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="img/banner-filter-search.png"
-                            style="max-width: 100%; height: auto"
-                            alt="Filter Fandom and Fextralife results from search engines, so that you can more easily find quality, independent wikis"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="img/banner-breezewiki.png"
-                            style="max-width: 100%; height: auto"
-                            alt="View Fandom wikis through BreezeWiki, to remove clutter and ads"
-                        />
-                    </li>
-                </ul>
-
-                <button type="button" class="slider-nav"></button>
-                <button type="button" class="slider-nav slider-nav-next"></button>
-
-                <div class="slider-indicators">
-                    <button class="active"></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </div>
-            </div>
-        </div>
-        <div class="container content">
-            <h2 class="subtitle"><a id="guide">Guide</a></h2>
-            <div class="content">
-                Once installed, you can access the extension's setting popup via the
-                <img src="./img/logo.png" width="20" alt="icon of an arrow pointing to the right" />
-                in the top bar, at the top right.
-                <br />
-                If you don't see the icon, it may be in the extension dropdown, which is a jigsaw icon
-                <img src="./img/jigsaw.png" width="20" alt="" /> in both Firefox and Chrome.
-            </div>
-            <div class="display">
-                <img
-                    src="./img/indie-wiki-buddy-popup.png"
-                    width="400"
-                    alt="A screenshot of the Indie Wiki Buddy popup settings"
-                    class="center"
-                />
-            </div>
-            <div class="content">
-                Inside this popup, you can toggle the extension on and off via the power button at the top right.
-                You can also control three global options:
-                <ul>
-                    <li>
-                      <b>🔔 Desktop notifications when redirected to an indie wiki or BreezeWiki</b>
-                      <br />
-                      When this option is enabled, you will receive a desktop notification whenever you are
-                      automatically redirected to either an indie wiki or <a href="https://breezewiki.com/">BreezeWiki</a>.
-                      This is on by default.
-                      <br />
-                      <br />
-                      If you aren't getting notifications when this is enabled, check your operating system's notification
-                      settings to ensure that your browser is allowed to send notifications.
-                    </li>
-                    <br />
-                    <li>
-                      <b>🔎 Filter non-indie wikis in Google, Bing, DuckDuckGo, & other search engines</b>
-                      <br />
-                      When this option is enabled, non-indie wikis will be filtered from search engine results
-                      when an independent wiki is available. This is to help prioritize independent wikis in your results.
-                      This is on by default.
-                      <br />
-                      <br />
-                      Currently, Google, Bing, DuckDuckGo, Yahoo, Brave, Ecosia, and Startpage are supported.
-                      Note that image results are not filtered;
-                      we don't want users to miss out on images they might not find elsewhere!
-                      <br />
-                      <br />
-                      When a search result is filtered, it will be replaced with:
-                      <br />
-                      "<i>A search result from ABC Wiki has been removed by Indie Wiki Buddy. Look for results from XYZ instead!</i>"
-                    </li>
-                    <br />
-                    <li>
-                      <b>🌬️ Use BreezeWiki on Fandom</b>
-                      <br />
-                      This option will render Fandom wikis through <a href="https://breezewiki.com/">BreezeWiki</a>, an external service that removes clutter, simplifies the page, and removes ads.
-                      Occasionally, BreezeWiki or one of its mirrors may go down; when this happens, you can simply switch to another working instance. This is off by default.
-                    </li>
-                  </ul>
-            </div>
-            <div class="content">
-                You can click "View All Settings" to open a full settings page where you can configure your settings per-wiki.
-            </div>
-            <div class="display">
-                <img
-                    src="./img/indie-wiki-buddy-screenshot.png"
-                    width="400"
-                    alt="A screenshot of the Indie Wiki Buddy settings screen"
-                    class="center"
-                />
-            </div>
-            <div class="content">
-                The list of all wikis allows you to configure what you want to happen when visiting the respective
-                non-independent wiki:
-                <ul class="no-markers">
-                    <li>
-                        <img src="./img/toggle-disabled.png" width="20" alt="" /> Disable: You will be neither notified
-                        of nor redirected to the independent counterpart. You will still be directed to BreezeWiki if it
-                        is turned on.
-                    </li>
-                    <li>
-                        <img src="./img/toggle-redirect.png" width="20" alt="" /> Redirect: Be automatically redirected
-                        to the independent counterpart.
-                    </li>
-                    <li>
-                        <img src="./img/toggle-alert.png" width="20" alt="" /> Alert: Have a display banner at the top
-                        notifying you that an independent wiki is available. This will appear on both Fandom and
-                        BreezeWiki pages.
-                    </li>
-                    <li>
-                        <img src="./img/toggle-search-filter.png" width="20" alt="" />
-                        Search filtering: Hide the non-independent wiki(s) in
-                        Google, Bing, DuckDuckGo, Yahoo, Brave, Ecosia, and Startpage, to help guide you to
-                        find the independent counterpart. Usually, the independent wiki will appear in that same search.
-                    </li>
-                </ul>
-                The "set all" buttons above the list of wikis ("disable all", "set all to redirect", etc.) let you quickly
-                toggle settings for all wikis at once.
-                Clicking one of these buttons will set that as the default behavior for new wikis that are added in the future.
-            </div>
-        </div>
-        <div class="container content">
-            <h2 class="subtitle"><a id="submit">Submit a Wiki</a></h2>
-            <div class="content">
-                We're always looking for more wikis to add to the extension! <br />
-                <br />
-                Here are the criteria:
-                <ul>
-                    <li>
-                        The destination wiki should be independent, meaning that decision-making and control of the wiki
-                        largely rests with the wiki's staff and volunteer editing community.
-                        <ul>
-                            <li>
-                                Factors include editorial independence, the editorbase's ability to request changes from
-                                their host, and any history of the host exerting decisions contrary to a wiki
-                                community's wishes.
-                            </li>
-                            <li>
-                                Miraheze wikis may be considered independent, due to Miraheze's openness,
-                                customizability, and ability for wikis to migrate off the platform.
-                            </li>
-                            <li>
-                                wiki.gg wikis are not considered independent. There is a separate "Redirect to wiki.gg"
-                                extension available for
-                                <a
-                                    href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca"
-                                    >Chrome</a
-                                >
-                                and
-                                <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/"
-                                    >Firefox</a
-                                >
-                                that you can use alongside Indie Wiki Buddy.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        The destination wiki should be of decent quality, ideally matching (or exceeding) the quality
-                        and size of the origin wiki. While we want to support all independent wikis, we also want
-                        extension users to be directed to wikis where they can find what they are looking for.
-                    </li>
-                    <li>Should be of general interest. Wikis about particularly niche subjects may be discluded.</li>
-                    <li>
-                        When there are multiple independent wikis on the same subject, we will usually point to the wiki
-                        that is most complete and prominent in the community.
-                    </li>
-                </ul>
-            </div>
-            <div class="content">
-                If the independent wiki meets the criteria, you can submit it to be included in one of the following
-                ways:
-            </div>
-            <br />
-            <div class="align-center">
-                <a class="button-link" href="https://form.getindie.wiki" target="_blank">
-                    <button class="button">Submit via Google Form</button>
-                </a>
-                <a
-                    class="button-link"
-                    href="https://github.com/KevinPayravi/indie-wiki-buddy/issues/new?assignees=KevinPayravi&labels=add+wiki&template=request-a-wiki-be-added.md&title=Add+a+wiki%3A+WIKI+NAME"
-                    target="_blank"
-                >
-                    <button class="button">Open issue on GitHub</button>
-                </a>
-                <a
-                    class="button-link"
-                    href="https://github.com/KevinPayravi/indie-wiki-buddy/blob/main/README.md#adding-wikis"
-                    target="_blank"
-                >
-                    <button class="button">Contribute to codebase</button>
-                </a>
-            </div>
-        </div>
-        <div class="container content">
-            <h2 class="subtitle"><a id="faq">Frequently asked questions</a></h2>
-            <span class="question">Why does this exist?</span>
-            <div class="content">
-                Large, corporate-run wiki farms have enabled hundreds of great wikis and communities. Unfortunately,
-                these wiki farms can easily overshadow quality independent wikis, especially in search engine results.
-                Independent wikis often have the benefit of greater self-determination and fewer ads, but are easily
-                missed by users who aren't aware of their existence. This extension aims to help wiki readers discover
-                and user quality, independent wikis.
-            </div>
-            <br />
-            <span class="question">Why does this extension need access to so many sites?</span>
-            <div class="content">
-                Indie Wiki Buddy requests access to fandom.com, fextralife.com, and BreezeWiki and its mirrors,
-                in order to display redirect banners.
-                <br /><br />
-                Indie Wiki Buddy also requests access to Google (across all its country domains),
-                Bing, DuckDuckGo, Yahoo, Brave, Startpage, and Ecosia in order to filter search results on those sites.
-                There are almost 200 different domains for Google Search by country
-                (e.g. google.co.uk, google.ca, google.es, etc.), which take up most of the site accesses you see.
-                <br /><br />
-                The full list of sites Indie Wiki Buddy requests access to is available
-                <a href="https://github.com/KevinPayravi/indie-wiki-buddy/blob/main/manifest3.json#L40">here</a>.
-                <br /><br />
-                Indie Wiki Buddy never transmits or stores data from these sites. Access is only used in order to
-                display alert banners and filter search results.
-            </div>
-            <br />
-            <span class="question">Can Miraheze wikis be added to this extension?</span>
-            <div class="content">
-                Yes! For the purposes of this extension, Miraheze wikis are considered independent. Even though Miraheze
-                is a large wiki platform, it is a non-profit organization that allows for extensive control by wiki
-                staff, and provides for wikis to easily migrate off the platform.
-            </div>
-            <br />
-            <span class="question">Can wiki.gg wikis be added to this extension?</span>
-            <div class="content">
-                While wiki.gg is a great platform, for the purposes of this extension, wiki.gg wikis are currently not
-                considered independent and are out of this extension's scope. Fortunately, there is a "Redirect to
-                wiki.gg" extension available for
-                <a href="https://chrome.google.com/webstore/detail/redirect-to-wikigg/cngoemokfjekjkmajenlaokhnmmiinca"
-                    >Chrome</a
-                >
-                and <a href="https://addons.mozilla.org/en-US/firefox/addon/redirect-to-wiki-gg/">Firefox</a> that you
-                can use alongside Indie Wiki Buddy.
-            </div>
-            <br />
-            <span class="question">
-                For independent wikis to be added to the extension, why do they need to be of equal quality and
-                coverage as its non-independent counterpart?
-            </span>
-            <div class="content">
-                The extension is geared towards readers looking for information, and pointing them towards wikis that
-                might not have the information they're seeking isn't an ideal experience.
-            </div>
-            <div class="content">
-                That being said, I do want to support all independent wikis and know the importance for developing wikis
-                to get new readers and editors. In the future, the extension may allow for less-complete wikis to be
-                added, though likely with some sort of control to allow users to easily filter/toggle these wikis.
-            </div>
-            <div class="content">If you have any ideas for how this experience should look, please reach out!</div>
-            <br />
-            <span class="question">What happens when there are multiple independent wikis on the same topic?</span>
-            <div class="content">
-                We will try to redirect to the most complete wiki, and will also consider factors such as what is most
-                popular in the wiki subject's community.
-            </div>
-            <br />
-            <span class="question">Can I see or contribute to the code?</span>
-            <div class="content">
-                Yes! Indie Wiki Buddy is open source and available
-                <a href="https://github.com/KevinPayravi/indie-wiki-buddy">on GitHub</a>.
-            </div>
-        </div>
-        <div class="container content align-center">
-            <h2 class="subtitle"><a id="contact">Contact</a></h2>
-            <div class="content">Feel free to get in touch with questions, comments, or ideas!</div>
-            <div class="content">
-                <ul class="no-markers">
-                    <li>
-                        Email:
-                        <script type="text/javascript">
-                            name = "kevinpayravi";
-                            domain = "@gmail.com";
-                            mailto = "mailto:";
-                            document.write(
-                                ' <a href = "' +
-                                    mailto +
-                                    name +
-                                    domain +
-                                    '"class = "fill-div" > ' +
-                                    name +
-                                    domain +
-                                    " </a>"
-                            );
-                        </script>
-                    </li>
-                    <li>Discord: Kayvan#0001</li>
-                    <li>
-                        Twitter:
-                        <a href="https://twitter.com/KevinPayravi">@KevinPayravi</a>
-                    </li>
-                    <li>
-                        Mastodon:
-                        <a href="https://payravi.xyz/@kevin">@kevin@payravi.xyz </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container content align-center">
-            <div class="content">
-                A <a href="https://hamstro.dev/">Hamstro</a> project by
-                <a href="https://kevinpayravi.com">Kevin Payravi</a>
-                <br />
-                <br />
-                <a href="https://github.com/KevinPayravi/indie-wiki-buddy">Source</a> | <a href="changelog">Changelog</a> | <a href="listings">List of wikis</a> | <a href="privacy">Privacy policy</a>
-                <br />
-                <br />
-                Fandom is a trademark of <span class="no-wrap">Fandom, Inc.</span>
-                Fextralife is a trademark of <span class="no-wrap">Kinbundo Limited</span>.
-                <span class="no-wrap">Indie Wiki Buddy</span> is not affiliated with either site.
-            </div>
-        </div>
-    </body>
 </html>

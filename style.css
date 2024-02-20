@@ -81,6 +81,8 @@ td {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  max-width: 100%;
+  width: 400px;
 }
 
 .button:hover {

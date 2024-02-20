@@ -45,7 +45,7 @@ td {
   max-width: 100%;
 }
 
-.changelog img {
+.changelog ul img {
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
   margin: 1em;
   border: 1px solid #d8d8d8;
@@ -178,6 +178,12 @@ ul.padded {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.browser-icon {
+  height: 1em;
+  padding-left: 10px;
+  vertical-align: middle;
 }
 
 @media (max-width: 800px) {

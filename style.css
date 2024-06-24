@@ -123,7 +123,6 @@ ul.padded {
   margin-bottom: 40px;
   padding: 20px 40px;
 }
-
 .container>.content,
 .container>.question {
   word-wrap: break-word;
@@ -216,5 +215,70 @@ ul.padded {
 
   .flex {
     flex-direction: column;
+  }
+}
+
+div.scroll {
+  position: relative;
+  height: 35px;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.m-scroll1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollText1 120s infinite linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width:100%;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+.m-scroll2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollText2 120s infinite linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width:100%;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+div.scroll img {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+}
+
+@keyframes scrollText1 {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollText2 {
+  from {
+      transform: translateX(-50%);
+  }
+  to {
+      transform: translateX(0%);
   }
 }

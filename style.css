@@ -42,7 +42,8 @@ td {
   flex-direction: row;
   gap: 1em;
 }
-.flex > * {
+
+.flex>* {
   margin: auto;
 }
 
@@ -55,7 +56,7 @@ td {
 }
 
 .changelog ul img {
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
   margin: 1em;
   border: 1px solid #d8d8d8;
 }
@@ -109,6 +110,7 @@ ul.no-markers {
   list-style-type: none;
   padding: 0;
 }
+
 ul.padded {
   padding-left: .8em;
 }
@@ -123,6 +125,7 @@ ul.padded {
   margin-bottom: 40px;
   padding: 20px 40px;
 }
+
 .container>.content,
 .container>.question {
   word-wrap: break-word;
@@ -220,21 +223,20 @@ ul.padded {
 
 div.scroll {
   position: relative;
-  height: 35px;
+  height: 64px;
   background-color: transparent;
   overflow: hidden;
   z-index: 1;
   margin: 0 20px;
-  padding: 0;
+  padding: 10px 0;
 }
 
 .m-scroll1 {
   overflow: hidden;
   white-space: nowrap;
-  animation: scrollText1 120s infinite linear;
+  animation: scrollText1 60s linear infinite alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  width:100%;
   margin: 0;
   font-size: 0;
   display: flex;
@@ -246,10 +248,9 @@ div.scroll {
 .m-scroll2 {
   overflow: hidden;
   white-space: nowrap;
-  animation: scrollText2 120s infinite linear;
+  animation: scrollText2 60s linear infinite alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  width:100%;
   margin: 0;
   font-size: 0;
   display: flex;
@@ -260,25 +261,32 @@ div.scroll {
 
 div.scroll img {
   display: inline-block;
-  height: 25px;
-  width: 25px;
-  padding: 10px;
+  max-width: 64px;
+  max-height: 64px;
+  padding: 4px 10px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+}
+div.scroll abbr {
+  display: flex;
+  align-items: center;
 }
 
 @keyframes scrollText1 {
   from {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
+
   to {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scrollText2 {
   from {
-      transform: translateX(-50%);
+    transform: translateX(-50%);
   }
+
   to {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
 }

@@ -1,26 +1,83 @@
+/* Light mode colors */
+:root{
+  --main-color: #005799;
+  --base-color: white;
+  --base-variant: #eee;
+
+  --text-color-primary: #000;
+  --text-link-color: #005799;
+
+  --button-text: white;
+  --button-hover: #00467a;
+  --button-disabled-color: #CCCCCC;
+  --button-disabled-text: #888888;
+
+  --img-border-color: #005699;
+  --changelog-img-border: #d8d8d8;
+  --changelog-img-shadow: rgba(0, 0, 0, 0.3);
+  --carrousel-img-shadow: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root{
+    --main-color: #012540;
+    --base-color: #1e1e1e;
+    --base-variant: #252728;
+  
+    --text-color-primary: #fff;
+    --text-link-color: #89c4ff;
+  
+    --button-text: white;
+    --button-hover: #00467a;
+    --button-disabled-color: #8f8f8f;
+    --button-disabled-text: #ffffff;
+  
+    --img-border-color: #005699;
+    --changelog-img-border: #222222;
+    --changelog-img-shadow: rgba(0, 0, 0, 0.3);
+    --carrousel-img-shadow: rgba(255, 255, 255, 0.8);
+  }
+  
+  :root hr {
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+
+  :root img.dark-invert, :root #toggles #togglesKeys button {
+    filter: invert(1);
+    user-select: none;
+  }
+}
+
 /* Element styling */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  background: #005799;
+  color: var(--text-color-primary);
+  background: var(--main-color);
   margin-top: 20px;
 }
 
 h1 {
+  color: var(--text-color-primary);
   font-size: 2.3em;
 }
 
-a {
+a:link,
+a:visited,
+a:hover {
+  color: var(--text-link-color);
   text-decoration-style: dotted;
   text-decoration-thickness: 1px;
 }
 
 table {
-  border: 2px solid #eee;
+  border: 2px solid var(--base-variant);
 }
 
 th {
   text-align: left;
-  background-color: #eee;
+  background-color: var(--base-variant);
 }
 
 th,
@@ -56,9 +113,9 @@ td {
 }
 
 .changelog ul img {
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 0px var(--changelog-img-shadow);
   margin: 1em;
-  border: 1px solid #d8d8d8;
+  border: 1px solid var(--changelog-img-border);
 }
 
 .text-decor-none {
@@ -70,10 +127,10 @@ td {
 }
 
 .button {
-  background-color: #005799;
+  background-color: var(--main-color);
   border: none;
   border-radius: 15px;
-  color: white;
+  color: var(--button-text);
   padding: 16px;
   text-align: center;
   text-decoration: none;
@@ -87,12 +144,12 @@ td {
 }
 
 .button:hover {
-  background-color: #00467a;
+  background-color: var(--button-hover);
 }
 
 .button[disabled] {
-  background-color: #CCCCCC;
-  color: #888888
+  background-color: var(--button-disabled-color);
+  color: var(--button-disabled-text);
 }
 
 .button[disabled] img {
@@ -119,7 +176,8 @@ ul.padded {
 .container {
   max-width: 1000px;
   min-height: 50px;
-  background-color: white;
+  color: var(--text-color-primary);
+  background-color:  var(--base-color);
   border-radius: 20px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -144,7 +202,7 @@ ul.padded {
 
 .display>img {
   margin: 0 auto;
-  border: 10px solid #005699;
+  border: 10px solid var(--img-border-color);
   border-radius: 20px;
   max-width: 400px;
   width: 90%;
@@ -264,7 +322,7 @@ div.scroll img {
   max-width: 64px;
   max-height: 64px;
   padding: 4px 10px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(1px 1px 1px var(--carrousel-img-shadow));
 }
 div.scroll abbr {
   display: flex;

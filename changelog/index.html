@@ -38,9 +38,40 @@
             If you run into any issues, please <a href="https://getindie.wiki/#contact">get in touch</a>. Thank you for
             using Indie Wiki Buddy!
         </div>
-        <h2>3.13.4</h2>
+        <h2>3.13.5</h2>
         <span>
             <img class="browser-icon" src="../img/browser-chrome.png" alt="Chrome release date"> Pending release
+            <img class="browser-icon" src="../img/browser-firefox.png" alt="Firefox release date"> Pending release
+        </span>
+        <ul>
+            <li>
+                Fix for Brave Search result filtering.
+                <ul>
+                    <li>
+                        Starting around April 9, if Indie Wiki Buddy search engine filtering was enabled for Brave,
+                        the results would flash for a second and then disappear, leaving a blank page.
+                    </li>
+                    <li>
+                        The issue appears to have started after Brave Search was updated with JavaScript code
+                        that expects a specific DOM structure. When search engine filtering is enabled,
+                        IWB will insert a few HTML elements (e.g. the blue button that points users to independent wikis).
+                        These elements conflicted with Brave's JavaScript, causing the page to flash and then disappear when
+                        Brave would try to refresh the DOM.
+                        This has been fixed by changing the position of the DOM elements Indie Wiki Buddy
+                        inserts into the page, avoiding conflict with Brave's code.
+                    </li>
+                    <li>
+                        Apologies for any inconvenience for Brave Search users,
+                        and thank you to everyone who kindly reported the issue
+                        and provided details to help debug!
+                    </li>
+                </ul>
+            </li>
+            <li>Improved light/dark mode color handling for elements injected into search engine results (redirect buttons, text, etc.)</li>
+        </ul>
+        <h2>3.13.4</h2>
+        <span>
+            <img class="browser-icon" src="../img/browser-chrome.png" alt="Chrome release date"> April 7, 2025
             <img class="browser-icon" src="../img/browser-firefox.png" alt="Firefox release date"> Pending release
         </span>
         <ul>

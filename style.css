@@ -112,6 +112,10 @@ td {
   max-width: 100%;
 }
 
+.content.listings img {
+  width: 16px;
+}
+
 .changelog ul img {
   box-shadow: 5px 5px 5px 0px var(--changelog-img-shadow);
   margin: 1em;

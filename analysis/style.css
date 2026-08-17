@@ -1,0 +1,164 @@
+:root {
+    --warn-bg: #fff8e6;
+    --warn-border: #e6c34a;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --warn-bg: #2a2410;
+        --warn-border: #8a742c;
+    }
+}
+
+.container.analysis {
+    max-width: 46em;
+}
+
+.analysis h2 {
+    font-size: 1.1em;
+    margin: 1.5em 0 0.5em;
+}
+
+.analysis form {
+    margin: 1.5em 0;
+    display: grid;
+    gap: 0.75em;
+}
+
+.analysis .field {
+    display: grid;
+    gap: 0.25em;
+}
+
+.analysis label {
+    font-weight: 600;
+}
+
+.analysis input[type="text"],
+.analysis textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5em 0.65em;
+    border: 1px solid var(--button-disabled-color);
+    border-radius: 6px;
+    background: var(--base-color);
+    color: var(--text-color-primary);
+    font: inherit;
+}
+
+.analysis input:focus-visible,
+.analysis textarea:focus-visible,
+.analysis .button:focus-visible {
+    outline: 2px solid var(--text-link-color);
+    outline-offset: 1px;
+}
+
+.analysis .button {
+    width: auto;
+    padding: 10px 24px;
+    justify-self: start;
+}
+
+.analysis .button[disabled] {
+    cursor: wait;
+}
+
+#status {
+    opacity: 0.75;
+}
+
+#overview p {
+    margin: 0.25em 0;
+}
+
+.analysis table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.analysis th,
+.analysis td {
+    border-bottom: 1px solid var(--base-variant);
+}
+
+.analysis td:nth-child(2),
+.analysis td:nth-child(3),
+.analysis th:nth-child(2),
+.analysis th:nth-child(3) {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+#warnings {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 6px;
+    padding: 0.25em 1em 0.75em;
+    margin: 1em 0;
+}
+
+#warnings h2 {
+    margin-top: 0.75em;
+}
+
+#warnings ul {
+    margin: 0;
+    padding-left: 1.25em;
+}
+
+#warnings li {
+    margin: 0.25em 0;
+    overflow-wrap: anywhere;
+}
+
+.analysis pre {
+    background: var(--base-variant);
+    border: 1px solid var(--button-disabled-color);
+    border-radius: 6px;
+    padding: 0.75em;
+    overflow-x: auto;
+    font-size: 0.85em;
+}
+
+#draft-notes {
+    opacity: 0.75;
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+}
+
+#favicon {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-top: 0.75em;
+}
+
+#favicon img {
+    background: var(--base-variant);
+    border: 1px solid var(--button-disabled-color);
+    border-radius: 3px;
+}
+
+#favicon .button {
+    padding: 6px 16px;
+    font-size: 0.9em;
+}
+
+.analysis textarea {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8em;
+    resize: vertical;
+}
+
+.analysis .checkbox {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+.footnote {
+    margin-top: 2.5em;
+    font-size: 0.85em;
+    opacity: 0.75;
+}

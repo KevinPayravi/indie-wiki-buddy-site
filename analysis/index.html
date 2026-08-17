@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Wiki Analysis - Indie Wiki Buddy</title>
+        <link rel="icon" href="../img/favicon-16.png" sizes="16x16" />
+        <link rel="icon" href="../img/favicon-32.png" sizes="32x32" />
+        <link rel="icon" href="../img/favicon-48.png" sizes="48x48" />
+        <link rel="icon" href="../img/favicon-64.png" sizes="64x64" />
+        <link rel="icon" href="../img/favicon-128.png" sizes="128x128" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="description" content="Tool to help review new redirect candidates for Indie Wiki Buddy." />
+        <meta property="og:image" content="https://getindie.wiki/img/indie-wiki-buddy-banner.png" />
+    </head>
+
+    <body>
+        <div class="container content analysis">
+            <h1 class="subtitle">Wiki Analysis</h1>
+            <p class="align-center"><a href="..">⇦ Back to home</a></p>
+            <p>
+                This tool helps review new redirect candidates for Indie Wiki Buddy: it compares an origin wiki with its
+                independent destination, checks it against the
+                <a href="https://github.com/IndieWikiBuddy/indie-wiki-buddy-data">Indie Wiki Buddy data</a>, and builds
+                a markdown comment for GitHub. Primarily works with just MediaWiki wikis.
+            </p>
+
+            <form id="form" autocomplete="off">
+                <div class="field">
+                    <label for="origin">Origin wiki URL</label>
+                    <input id="origin" type="text" placeholder="example.fandom.com" required />
+                </div>
+                <div class="field">
+                    <label for="destination">Destination (independent) wiki URL</label>
+                    <input id="destination" type="text" placeholder="example.wiki.gg" required />
+                </div>
+                <button id="submit" class="button" type="submit">Check</button>
+            </form>
+
+            <p id="status" role="status" hidden></p>
+
+            <section id="results" hidden>
+                <div id="overview"></div>
+                <table id="stats" hidden>
+                    <thead>
+                        <tr>
+                            <th>Statistic</th>
+                            <th>Origin</th>
+                            <th>Destination</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="warnings" hidden>
+                    <h2>⚠ Notes</h2>
+                    <ul></ul>
+                </div>
+                <div id="draft" hidden>
+                    <h2 id="draft-title"></h2>
+                    <pre><code id="draft-json"></code></pre>
+                    <p id="draft-notes"></p>
+                    <div id="favicon" hidden>
+                        <img id="favicon-actual" width="16" height="16" alt="Destination favicon" />
+                        <a id="favicon-download" class="button" download></a>
+                    </div>
+                </div>
+                <div id="markdown-wrap">
+                    <h2>Markdown for GitHub</h2>
+                    <label id="include-json-label" class="checkbox">
+                        <input id="include-json" type="checkbox" checked />
+                        Include the draft JSON
+                    </label>
+                    <textarea id="markdown" readonly rows="16" spellcheck="false"></textarea>
+                    <br />
+                    <button id="copy" class="button" type="button">Copy markdown</button>
+                </div>
+            </section>
+
+            <noscript>
+                <p>This tool needs JavaScript.</p>
+            </noscript>
+            <script src="app.js"></script>
+        </div>
+    </body>
+</html>

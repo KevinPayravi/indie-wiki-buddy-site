@@ -482,9 +482,9 @@ function buildView(origin, destination, entry, dataResult, language) {
 
 function buildMarkdown(view, withJson) {
     const lines = [
-        `<sub>Generated via [Indie Wiki Buddy wiki analysis tool](${TOOL_URL})</sub>`,
         "",
         "## Wiki comparison",
+        `<sub>Generated via [Indie Wiki Buddy wiki analysis tool](${TOOL_URL})</sub>`,
         "",
         ...view.sites.map(([label, site]) => siteLine(label, site)),
         "",

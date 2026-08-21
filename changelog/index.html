@@ -38,6 +38,99 @@
             If you run into any issues, please <a href="https://getindie.wiki/#contact">get in touch</a>. Thank you for
             using Indie Wiki Buddy!
         </div>
+        <h2>4.0.0</h2>
+        <span>
+            <img class="browser-icon" src="../img/browser-chrome.png" alt="Chrome release date" /> TBD
+            <img class="browser-icon" src="../img/browser-firefox.png" alt="Firefox release date" /> TBD
+        </span>
+        <ul>
+            <li>
+                <b>Wiki redirect data is now pulled from an API.</b>
+                Indie Wiki Buddy's wiki data now lives in its own
+                <a href="https://github.com/IndieWikiBuddy/indie-wiki-buddy-data" target="_blank">data repository on GitHub</a>,
+                served from <a href="https://api.getindie.wiki/v1/all-data.json" target="_blank">an API endpoint</a>.
+                <ul>
+                    <li>
+                        The extension fetches and caches the latest data every three hours, which means you'll get new wiki redirects soon after they're added instead of having to wait for an update to be made and approved through the extension stores (which can take a week or more)
+                    </li>
+                    <li>
+                        The extension package itself will still continue to be periodically updated with new wiki additions
+                    </li>
+                    <li>
+                        You can turn this off in settings, in which case you will only see the wikis bundled with your
+                        installed version
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Search engines are now opt-in!</b>
+                In an effort to be more privacy-friendly, Indie Wiki Buddy no longer asks for access to all its supported search engines upon install. google.com still works out of the box, as it is the most popular search engine that most users will want and expect to be enabled. Every other search engine (Bing, DuckDuckGo, Brave, Ecosia, Kagi, Qwant, Startpage, Yahoo, Yandex, and international Google domains) is off until the user turns it on via settings.
+                <ul>
+                    <li>
+                        This keeps the extension's access to the minimum you actually use, and lets us add new search
+                        engines later without an update that everyone has to approve
+                    </li>
+                    <li>
+                        For existing users who update to 4.0.0, they will see a one-time page explaining the change. Prior permissions may have carried over so users may or may not see all search engines toggled on, depending on browser and configuration.
+                    </li>
+                </ul>
+                <div class="align-center">
+                    <img src="../img/permissions-update.png" width="600"
+                        alt="Indie Wiki Buddy's permissions update page, listing search engines to re-enable." />
+                </div>
+            </li>
+            <li>
+                <b>Custom search engines are back!</b>
+                You can now point Indie Wiki Buddy at your own search engines running SearXNG or Whoogle.
+                <div class="align-center">
+                    <img src="../img/custom-search-engines.png" width="500"
+                        alt="Indie Wiki Buddy's custom search engine settings." />
+                </div>
+            </li>
+            <li>
+                <b>New welcome page on first install</b>, walking you through the settings most people want to set
+                up.
+                <div class="align-center">
+                    <img src="../img/welcome-page.png" width="700"
+                        alt="Indie Wiki Buddy's welcome page, shown when the extension is first installed." />
+                </div>
+            </li>
+            <li>
+                BreezeWiki changes:
+                <ul>
+                    <li>
+                        Similar to our search engines update, BreezeWiki mirrors are now opt-in on selection
+                    </li>
+                    <li>
+                        Available BreezeWiki mirrors are now pulled from our <a href="https://bw.getindie.wiki/instances.json">endpoint</a>
+                    </li>
+                    <li>Everyone's host is reset to breezewiki.com with this update</li>
+                </ul>
+            </li>
+            <li>
+                Search result filtering improvements:
+                <ul>
+                    <li>Re-ordering indie wiki results to the top is now more reliable</li>
+                    <li>Wikis with non-Latin names are now handled correctly</li>
+                </ul>
+            </li>
+            <li>
+                Under the hood:
+                <ul>
+                    <li>
+                        Minimum browser versions are now Chrome 131 (was 88) and Firefox 128 (was 113), which is required to support optional permissions
+                    </li>
+                    <li>
+                        Firefox now runs on Manifest V3, the same platform as Chrome
+                    </li>
+                    <li>
+                        Per-wiki settings are now split across 32 storage keys, to avoid hitting the browser storage limit for synced storage data. The extension will automatically migrate your settings to the new format.
+                    </li>
+                    <li>The codebase has been updated to use ES modules to enable better sharing of code between files</li>
+                    <li>Dark mode fixes, keyboard focus fixes, missing localization, and other small improvements</li>
+                </ul>
+            </li>
+        </ul>
         <h2>3.14.7 / 8</h2>
         <span>
             <img class="browser-icon" src="../img/browser-chrome.png" alt="Chrome release date" /> August 11, 2026
